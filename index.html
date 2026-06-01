@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarthak Ghayal | Portfolio</title>
+    <meta name="description" content="Portfolio of Sarthak Ghayal, showcasing web development projects, skills, guitar performances, and creative work.">
+    <meta name="theme-color" content="#1a202c">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="branding">
-                <h1>Sarthak Ghayal</h1>
-                <p>Musician, Web Developer, Creative Learner</p>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="#home" class="logo">Sarthak<br><span>Ghayal</span></a>
+                <p class="tagline">Developer • Musician • Problem Solver</p>
             </div>
-            <nav>
+
+            <button class="menu-toggle" aria-controls="main-navigation" aria-expanded="false">Menu</button>
+
+            <nav id="main-navigation" class="site-nav" aria-label="Primary">
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -25,52 +31,167 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container">
-                <h2>Hi, I’m Sarthak.</h2>
-                <p>I build modern web experiences and play guitar with passion.</p>
-                <p>Welcome to my portfolio.</p>
+        <section id="home" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Hi, I’m Sarthak</p>
+                    <h1>Designing clean websites and sharing music through every line.</h1>
+                    <p class="hero-description">I combine web development skills with a passion for guitar to create modern digital experiences and memorable performances.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="button primary">View Projects</a>
+                        <a href="#contact" class="button secondary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-details">
+                    <div class="hero-card">
+                        <h2>What I Do</h2>
+                        <ul>
+                            <li>Responsive websites</li>
+                            <li>Interactive user interfaces</li>
+                            <li>Music composition &amp; performance</li>
+                            <li>Creative problem solving</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="about" class="about container">
-            <h2>About Me</h2>
-            <p>I am a creative developer who loves combining music and technology. I enjoy learning new skills, building responsive websites, and sharing my work with others.</p>
+        <section id="about" class="section about-section container">
+            <div class="section-heading">
+                <span class="section-number">01</span>
+                <h2>About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-copy">
+                    <p>I am a front-end focused web developer and musician based in India. I enjoy building sleek websites, learning new technologies, and expressing creativity through guitar.</p>
+                    <p>My work is guided by a belief that good design should be simple, accessible, and emotionally engaging.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>2+</h3>
+                        <p>Years of coding experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>10+</h3>
+                        <p>Projects completed</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>100+</h3>
+                        <p>Hours of guitar practice per month</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="skills" class="skills container">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML &amp; CSS</li>
-                <li>Responsive Layouts</li>
-                <li>JavaScript Fundamentals</li>
-                <li>Guitar Performance</li>
-                <li>Creative Problem Solving</li>
-            </ul>
+        <section id="skills" class="section skills-section container">
+            <div class="section-heading">
+                <span class="section-number">02</span>
+                <h2>Skills</h2>
+            </div>
+            <div class="skill-grid">
+                <article class="skill-item">
+                    <h3>Front-end</h3>
+                    <p>HTML, CSS, JavaScript, responsive design, accessibility.</p>
+                </article>
+                <article class="skill-item">
+                    <h3>Web Tools</h3>
+                    <p>Git, VS Code, Chrome DevTools, deployment workflows.</p>
+                </article>
+                <article class="skill-item">
+                    <h3>Music</h3>
+                    <p>Guitar performance, songwriting, practice routines, live sets.</p>
+                </article>
+                <article class="skill-item">
+                    <h3>Creativity</h3>
+                    <p>Visual storytelling, user experience, collaboration, idea generation.</p>
+                </article>
+            </div>
         </section>
 
-        <section id="projects" class="projects container">
-            <h2>Featured Work</h2>
-            <article>
-                <h3>Personal Portfolio</h3>
-                <p>A clean and responsive portfolio site that showcases my interests, skills, and creative work.</p>
-            </article>
-            <article>
-                <h3>Music &amp; Guitar</h3>
-                <p>Online updates about my guitar practice, performances, and the songs I enjoy playing.</p>
-            </article>
+        <section id="projects" class="section projects-section container">
+            <div class="section-heading">
+                <span class="section-number">03</span>
+                <h2>Featured Projects</h2>
+            </div>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>A modern personal portfolio that highlights projects, skills, and contact details with a polished, responsive layout.</p>
+                    <a href="#contact" class="project-link">Explore</a>
+                </article>
+                <article class="project-card">
+                    <h3>Music Showcase</h3>
+                    <p>An online music showcase featuring guitar performance notes, song highlights, and creative inspiration.</p>
+                    <a href="#contact" class="project-link">Explore</a>
+                </article>
+                <article class="project-card">
+                    <h3>UI Concept</h3>
+                    <p>Design mockups for a fictional creative brand, focusing on clarity, color, and responsive interaction patterns.</p>
+                    <a href="#contact" class="project-link">Explore</a>
+                </article>
+            </div>
         </section>
 
-        <section id="contact" class="contact container">
-            <h2>Contact</h2>
-            <p>If you'd like to connect, send an email or find me on social media.</p>
-            <p>Email: <a href="mailto:sarthak@example.com">sarthak@example.com</a></p>
+        <section id="testimonials" class="section testimonials-section container">
+            <div class="section-heading">
+                <span class="section-number">04</span>
+                <h2>Testimonials</h2>
+            </div>
+            <div class="testimonial-grid">
+                <blockquote>
+                    <p>“Sarthak delivered a beautiful website quickly and with a great eye for detail. His creativity and communication were outstanding.”</p>
+                    <footer>— A happy client</footer>
+                </blockquote>
+                <blockquote>
+                    <p>“His music sense and design sense make him a unique collaborator. The final result felt both professional and personal.”</p>
+                    <footer>— Music partner</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="section contact-section container" id="contact">
+            <div class="section-heading">
+                <span class="section-number">05</span>
+                <h2>Contact</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-copy">
+                    <p>Ready to start a project or just want to say hello? Send a message and I’ll get back to you soon.</p>
+                    <div class="contact-details">
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:sarthak@example.com">sarthak@example.com</a>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>India</p>
+                        </div>
+                    </div>
+                </div>
+                <form action="#" class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="What would you like to discuss?" required></textarea>
+
+                    <button type="submit" class="button primary">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>© 2026 Sarthak Ghayal. Built with HTML and a touch of creativity.</p>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <p>© 2026 Sarthak Ghayal. Built with HTML and ambitious ideas.</p>
+            <ul class="social-links">
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
         </div>
     </footer>
 </body>
